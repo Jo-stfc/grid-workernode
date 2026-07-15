@@ -1,4 +1,4 @@
-FROM rockylinux:8
+FROM rockylinux:9
 
 # Add labels and arguments
 ARG XROOTD_VERSION=5.9.6-2
@@ -6,7 +6,7 @@ ARG XRDCEPH_VERSION=5.9.6-2
 ARG CEPH_VERSION=19.2.4-2
 
 ARG ARCH=x86_64
-ARG DISTRO=el8
+ARG DISTRO=el9
 LABEL xrootd-ver=$XROOTD_VERSION
 LABEL xrdceph-ver=$XRDCEPH_VERSION
 LABEL ceph-ver=$CEPH_VERSION
