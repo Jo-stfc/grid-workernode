@@ -1,4 +1,4 @@
-[xrootd-ceph-el8-x86_64]
+[xrootd-ceph-el9-x86_64]
 name = xrootd-ceph-el8-x86_64
 baseurl = http://repos.gridpp.rl.ac.uk/yum/xrootd-ceph/quincy/el9/x86_64/
 metadata_expire = 7d
