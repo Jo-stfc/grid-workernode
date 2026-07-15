@@ -1,9 +1,9 @@
 FROM rockylinux:8
 
 # Add labels and arguments
-ARG XROOTD_VERSION=5.7.3-4
-ARG XRDCEPH_VERSION=5.7.3-4
-ARG CEPH_VERSION=17.2.8-2
+ARG XROOTD_VERSION=5.9.6-2
+ARG XRDCEPH_VERSION=5.9.6-2
+ARG CEPH_VERSION=19.2.4-2
 
 ARG ARCH=x86_64
 ARG DISTRO=el8
@@ -54,7 +54,7 @@ RUN dnf -y install python3-dnf-plugin-versionlock && \
                    xrootd-selinux-${XROOTD_VERSION}.${DISTRO}.noarch \
                    xrootd-server-${XROOTD_VERSION}.${DISTRO}.${ARCH} \
                    xrootd-server-libs-${XROOTD_VERSION}.${DISTRO}.${ARCH} \
-                   xrootd-ceph-buffered-${XRDCEPH_VERSION}.${DISTRO}.${ARCH} \
+                   xrootd-ceph-${XRDCEPH_VERSION}.${DISTRO}.${ARCH} \
                    xrootd-voms-${XROOTD_VERSION}.${DISTRO}.${ARCH} \
                    xrootd-scitokens-${XROOTD_VERSION}.${DISTRO}.${ARCH} && \
     # For debugging purposes, show the versionlock list
